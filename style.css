@@ -84,6 +84,29 @@ body {
 .headerRightSearchButtom:hover {
     background-color: #f4f4f4;
 }
+@media (max-width: 900px) {
+    .headerRightParentLinks {
+        display: none;
+    }
+    .headerRight {
+        justify-content: end;
+    }
+}
+@media (max-width: 455px) {
+    .header {
+        flex-wrap: wrap;
+        height: 60px;
+    }
+    .headerLeft {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .headerRight {
+        width: 100%;
+        justify-content: center;
+    }
+}
 /* ------------------------------------------------------------------------------------------------------ */
 /* Container */
 /* .container {
@@ -91,7 +114,6 @@ body {
 } */
 .mainPage {
     width: 88%;
-    height: 600px;
     margin: 16px auto;
 }
 /* Header Box */
@@ -114,6 +136,8 @@ body {
 
 /* Content Box */
 .contentBox {
+    background-color: black;
+    height: 500px;
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -121,11 +145,14 @@ body {
 /* left side */
 .leftContentBox {
     width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 /* left image */
 .leftContentImageContainer {
-    height: 160px;
     overflow: hidden;
+    height: 30%;
 }
 .leftContentImage {
     width: 100%;
@@ -135,6 +162,10 @@ body {
 .leftContentText {
     background-color: #9ddbff;
     padding: 5px 12px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 /* left text heading */
 .leftContentTextHeading {
@@ -160,11 +191,18 @@ body {
 /* right side */
 .rightContentBox {
     width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 /* content text */
 .rightContentText {
     background-color: white;
     padding: 5px 12px;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 /* content heading */
 .rightContentTextHeading {
@@ -207,7 +245,7 @@ body {
 } */
 /* content image */
 .rightContentImageContainer {
-    height: 164px;
+    height: 35%;
     overflow: hidden;
 }
 .rightContentImage {
